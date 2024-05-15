@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <section>
+      <!-- Tables -->
+      <h2>
+
+      </h2>
+      <ul>
+        <li>table</li>
+        <li>thead - atvaizuoja lentelės stulpelių pavadinimus</li>
+        <li>tbody - atvaizuoja lentelės duomenis</li>
+        <li>tfoot - isvestinės, sumos ir t.t.</li>
+        <li>tr - table row -sukuria lentelės eilutę</li>
+        <li>th - table heading - lentelės tulpelio pavadinimas</li>
+        <li>td -table data - lentelės duomenys</li>
+        <li>colgroup - stulpeliu grupė</li>
+        <li>caption - lentelės pavadinimas</li>
+        <li>col - stulpelių paskirstymas</li>
+      </ul>
+      <div>
+        <h3>PVZ</h3>
+        <table>
+          <caption> HA ha ha haa Ha</caption>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Vardas</th>
+              <th>Gyvunas</th>
+              <th>Ugis</th>
+              <th>Kazkas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>Laurynas</td>
+              <td>Diegas</td>
+              <td>189</td>
+              <td>Suo</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Greta</td>
+              <td>Lindis</td>
+              <td>178</td>
+              <td>Mergina</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Simonas</td>
+              <td>Monis</td>
+              <td>190</td>
+              <td>Brolis</td>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td>Laurynas</td>
+              <td>Diegas</td>
+              <td>189</td>
+              <td rowspan="3">Suo</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Greta</td>
+              <td>Lindis</td>
+              <td>178</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Simonas</td>
+              <td>Monis</td>
+              <td>190</td>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td>Laurynas</td>
+              <td>Diegas</td>
+              <td>189</td>
+              <td>Suo</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Greta</td>
+              <td>Lindis</td>
+              <td>178</td>
+              <td>Mergina</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Simonas</td>
+              <td>Monis</td>
+              <td>190</td>
+              <td>Brolis</td>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td>Laurynas</td>
+              <td>Diegas</td>
+              <td>189</td>
+              <td>Suo</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Greta</td>
+              <td>Lindis</td>
+              <td>178</td>
+              <td>Mergina</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Simonas</td>
+              <td>Monis</td>
+              <td>190</td>
+              <td>Brolis</td>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td>Laurynas</td>
+              <td>Diegas</td>
+              <td>189</td>
+              <td>Suo</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Greta</td>
+              <td>Lindis</td>
+              <td>178</td>
+              <td>Mergina</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Simonas</td>
+              <td>Monis</td>
+              <td>190</td>
+              <td>Brolis</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Vidurkis</td>
+              <td>Wuuuut</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+    <section>
+      <!-- Attribute selectors -->
+      <h3>Attribute selectors</h3>
+      <ul>
+        <li>[attribute] - pagal atributo vardą</li>
+        <li>[attribute="reiksmė] -atributo vardas ir reikšmė</li>
+        <li>[attribute~="reiksme"]-atributo vardas ir reikšmės žodis(vienas iš žodžių atskirtas tarpu turi buti tokia)</li>
+        <li>[attribute*="reiksme"]-atributo vardas ir reikšmės dalis(turi būti tokia dalis reikšmėje)</li>
+        <li>[attribute^="reiksme"]-atributo vardas ir reikšmė prasidedanti nurodyta reikšme</li>
+        <li>[attribute$="reiksme"]-atributo vardas ir reikšmė besibaigianti nurodyta reikšme</li>
+        <li>[attribute|="reiksme"]-atributo vardas ir reikšmė arba ji su brukšneliu</li>
+      </ul>
+    </section>
+    <section>
+      <!-- Pseudo klasės -->
+      <h3>Pseudo klasių selektoriai</h3>
+      <ul>
+        <li>Nuorodų</li>
+        <ul>
+          <li>:link - nelankyta nuoroda</li>
+          <li>:visited</li>
+          <li>:hover</li>
+          <li>:active</li>
+        </ul>
+        <li>:first-child - pirmasis vaikinis elementas</li>
+        <li>:last-child - paskutinis vaikinis elementas</li>
+        <li>:only-child - vienintelis vaikinis elementas</li>
+        <li>:first-of-type - pirmasis to tipo vaikinis elementas</li>
+        <li>:last-of-type - paskutinis to tipo vaikinis elementas</li>
+        <li>:only-of-type - vienintelis to tipo vaikinis elementas</li>
+        <li>:nth-child(n) -</li>
+        <li>:nth-last-child(n) -</li>
+        <li>:nth-of-type(n) -</li>
+        <li>:nth-last-of-type(n) -</li>
+        <li>Nebūtini <ul>
+            <li>:not(selector) - parenka viską bet ne nurodytą selektorių</li>
+            <li>:root - kurti kintamuosius CSS-e (ir kitokiems dalykams)</li>
+            <li>:target - kreipiamasi į elementą į kurį nusinaviguoji su nuoroda</li>
+            <li>:lang(language) - kalbos atributo selektorius</li>
+            <li></li>
+            <li>:empty - tagas be turinio</li>
+            <li>:fullscreen- pajungus viso ekrano mode</li>
+          </ul>
+        </li>
+      </ul>
+      <div>
+        <h3>Pavyzdžiai</h3>
+        <a href="https://www.google.com/">Nuoroda</a>
+      </div>
+    </section>
+    <section>
+      <!-- Icons -->
+      <h3>Ikonos </h3>
+      <p>reikia importuoti, sulinkinti</p>
+      <p>ikonos neturi savo tag, todėl naudoja 'i' arba 'span' tagus (blokinius tagus).</p>
+      <p>Taisyklingiau naudoti 'span' tag, nes 'i' skirtas vidinį tag padaryti italic stiliaus.</p>
+      <p>kad suteikti 'span' tag ikoną, reikia pridėti klases.
+        <br>
+        Reikia traktuoti kaip tekstą, ne kaip blokus. Jei nori didinti reikia disinti font size. kad nuspalvinit reikia keisti font color.
+      </p>
+      <span class="bi bi-window-stack"> </span>
+    </section>
+    <section>
+      <!-- multimedija -->
+      <h2>Multimedijos iframe</h2>
+      <p>Įterpia kitos svetainės langą.</p>
+
+      <h2>Pavyzdys</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/EzFXDvC-EwM?si=uVV2ywGLfzTZNfmL&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d73796.0653445787!2d25.280512!3d54.689792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1slt!2slt!4v1714985422271!5m2!1slt!2slt" width="400" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
+</html>

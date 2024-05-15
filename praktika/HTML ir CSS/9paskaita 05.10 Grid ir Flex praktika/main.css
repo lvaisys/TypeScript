@@ -1,0 +1,77 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+#fonas {
+  background-image: url("./Nova\ Scotia\ Duck\ Tolling\ Retriever.jpg");
+  background-size: cover;
+  height: 60vh;
+  background-position: center;
+  position: relative;
+
+  h1,
+  p {
+    text-shadow: 0 0 5px orangered;
+  }
+
+  &::before {
+    content: "";
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(186, 253, 109, 0.411);
+
+    position: absolute;
+  }
+
+  >div {
+    position: relative;
+    /* z-index: 1    ; */
+  }
+}
+
+#dtable {
+  text-align: center;
+
+  >table {
+    border-collapse: collapse;
+    margin: 0;
+    overflow: hidden;
+
+    * {
+      position: relative;
+      z-index: 1;
+    }
+
+    th,
+    td {
+      border: 2px solid blue;
+      width: 100px;
+      height: 30px;
+    }
+
+    th:hover,
+    td:hover {
+      background-color: burlywood;
+      position: relative;
+    }
+
+    tr:hover {
+      background-color: blanchedalmond;
+    }
+
+    /* col:hover{
+      background-color: aqua;
+    } */
+
+    td:hover::before,
+    th:hover::before {
+      content: "";
+      height: 10000px;
+      width: 100%;
+      position: absolute;
+      background-color: cadetblue;
+      top: -5000px;
+      left: 0;
+      z-index: 0;
+    }
+  }
+}

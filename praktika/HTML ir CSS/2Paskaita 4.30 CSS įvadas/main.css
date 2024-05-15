@@ -1,0 +1,46 @@
+p{
+  color: red;
+}
+.kazkokia{
+  background-color: aquamarine;
+}
+.nesamone{
+  background-color: #ffe4c465;
+}
+#sugalvotasId{
+  text-decoration: underline;
+}
+#alt{
+  text-decoration:dotted;
+}
+.fonas{
+  height: 500px;
+
+}
+.spalva{
+  background-color: #4dbdbd85;
+}
+.gradientas{
+  background-image: linear-gradient(
+    to top left,
+    #812f2f83,
+    #3030a09d,
+    #2996298a,
+    #fafa22ce
+  );
+}
+.imgBg1{
+background-image: url(./media/atsisiųsti.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+}
+.imgBg2{
+  background-image: url(./media/29873404_1098837936925694_6535130850273408897_o.jpg
+  );
+  background-attachment: fixed;
+}
+.imgBg3{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmVRLBvX2Abfdt7vADuXniKfuTFeCiehDv2MEHJGWYKw&s");
+  background-size: cover;
+  background-position: center;
+}

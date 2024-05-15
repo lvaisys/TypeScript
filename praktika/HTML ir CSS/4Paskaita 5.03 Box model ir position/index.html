@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <main>
+    <!-- box model -->
+    <section>
+
+      <h2>Box model</h2>
+      <ul>
+        <li>Content - centrinė dalis</li>
+        <li>Padding - pamušalas, tarpas tarp turinio ir remelio</li>
+        <li>Border - kraštinė</li>
+        <li>Margin - paraštė</li>
+        <li>Position - pozicija, neįtakoja kitų elementų pozicijos</li>
+      </ul>
+      <div class="boxModelPvz">Box model pvz</div>
+      <!-- Content -->
+      <div>
+        <H3>Content</H3>
+        <p>įtakoja turinio kiekis ir jo nustatymai (pvz: width, height, font size....)
+        </p>
+      </div>
+      <!-- Padding -->
+      <div>
+        <h3>Padding</h3>
+        <p>tarpas tarp turinio ir rėmelio.<br>
+          Padding gali būti nustatomas 8 būdais</p>
+      </div>
+      <!-- Border -->
+      <div>
+        <h3>Border</h3>
+        <p>Josta atskirianti padding ir margin.
+          <br>
+          <strong>Su border baigiasi elemento vidinė dalis (ji spalvinama su fonu)</strong>
+        </p>
+        <p>Nustatymai: galima suteikti spalvos linijos storio, tipo, kampų apvalinimo stilius</p>
+        <ul>
+          <li>Border: width, style, color</li>
+          <li>border-radius</li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- Margin -->
+      <div>
+        <h3>Margin</h3>
+        <p>gali persidengti, jeigu vienas po kitu elementai esantys yra blokiniai.</p>
+        <p>super duper (margin: 0 auto; centruoja per centra viso ekrano tik blokinį arba blokini-linijinį )</p>
+        <p>gali būti taip pat nustatomas 8 būdais</p>
+        <p>margin iį viršuaus ir apačios neveikia linijiniams elementams!</p>
+      </div>
+      <!-- Position -->
+      <div>
+        <h3>Position</h3>
+        <ul>
+          <li>static (default)</li>
+          <li>relative</li>
+          <li>absolute</li>
+          <li>fixed</li>
+          <li>sticky</li>
+          <li>top, right, bottom, left, z-index (ne pozicojos)</li>
+        </ul>
+        <p>Suteikus elementui bet kuria apart static posiciją jis įgauna galimybę naudotis top, rightt, bottom, left
+          z-index nustatymais.
+          <br>
+          z-index nusako elemento eilės sluoksnį (kaip arti/toli nuo vertotojo elemntas yra, kuris lementas kurį
+          užstoja)
+        </p>
+      </div>
+    </section>
+    <!-- position -->
+    <section>
+      <h3>static</h3>
+      <p>nesuteikia jokių savybių</p>
+      <div class="positionContainer">
+        <div class="box static">Static1</div>
+        <div class="box static">Static1</div>
+        <div class="box static">Static1</div>
+        <div class="box static">Static1</div>
+      </div>
+      <h3>Relative</h3>
+      <p>suteikia galimybę naudoti top left bottom left pozicijomis. Pozicija keičiama nuo originalios savo pozicijos.
+        <br>
+        Elemento viduje esant absolučiajam elementui
+        jo atitraukimai skaičiuojami nuo artimiausio protevinio elento turinčio reliatyviąją poziciją.
+      </p>
+      <div class="positionContainer">
+        <div class="box static">Static1</div>
+        <div class="box static">Static1</div>
+        <div class="box relative zindex5 ">relative</div>
+        <div class="box relative top right">relative</div>
+      </div>
+      <h3>Absolute</h3>
+      <p>suteikia galimybę naudoti top left bottom left pozicijomis.
+        Jis išeina iš puslapio tėkmės. <br>
+        Visi nustatymai atitraukia elementą nuo artimiausio protėvinio elemento kraštų, kuris turi relative nustatymą.
+      </p>
+      <div class="positionContainer relative">
+        <div class="box static">Static1</div>
+        <div class="box static">Static2</div>
+        <div class="box absolute top">absolute3</div>
+        <div class="box static">static4</div>
+      </div>
+      <h3>Fixed</h3>
+      <p>suteikia galimybę naudoti top left bottom left pozicijomis.
+        Jis išeina iš puslapio tėkmės. <br>
+        neįtakoja relative pozicija. <br>
+        Prilimpa prie ekrano (viewPort) ir juda skrolinant ekraną.
+      </p>
+      <div class="positionContainer">
+        <div class="box fixed top">Fixed1</div>
+        <div class="box static">Static2</div>
+        <div class="box static">Static3</div>
+        <div class="box static">Static4</div>
+      </div>
+
+      <h3>Sticky</h3>
+      <p>suteikia galimybę naudoti top left bottom left pozicijomis.
+        Jis neišeina iš puslapio tėkmės. <br>
+        neįtakoja relative pozicija. <br>
+        Prilimpa prie nurodyto tėvinio elemento krašto jei nurodoma nuo kurio krašto ir juda skrolinant ekraną (viewporto).
+        Juda tik tėvinio elemento ribose.
+      </p>
+      <div class="positionContainer">
+        <div class="box static">Static1</div>
+        <div class="box static">Static2</div>
+        <div class="box sticky top">Sticky3</div>
+        <div class="box static">Static4</div>
+      </div>
+      <section style="height: 2000px;"></section>
+
+    </section>
+    <!-- selectors -->
+    <section>
+      <h2>Selectoriai</h2>
+      <ul>
+        <li>selektoriu1,selektorius2, ... - keltos selektoriu parinkimas</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+<div>
+  <!-- pavyzdžiai -->
+  <h4 class="textas">Testas0</h4>
+  <h5 class="textas">Testas1</h5>
+  <h5>Testas2</h5>
+</div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>

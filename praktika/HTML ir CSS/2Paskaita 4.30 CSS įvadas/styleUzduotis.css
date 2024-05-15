@@ -1,0 +1,16 @@
+body {
+  font-family: 'Roboto';
+  font-size: 12px;
+}
+
+.pabraukta {
+  text-decoration: underline;
+}
+
+.zaliasTekstas {
+  color: #2be059;
+}
+
+.pakrypesTekstas {
+  font-style: italic;
+}

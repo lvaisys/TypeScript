@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <main>
+
+    <section>
+      <!-- formos -->
+      <h2>Form</h2>
+      <div>
+        <h3>Formų tagai</h3>
+        <ul>
+          <li>form</li>
+          <li>label - formos įvesties pavadinimas</li>
+          <li>input - įvesties laukas</li>
+          <li>textarea - įvesties laukas dideliam kiekiui teksto</li>
+          <li>select - opcijų pasirinkties laukas ( nedideliam kiekiui opcijų)</li>
+          <li>datalist - didelio kiekių opcijų pasirinkities laukas</li>
+          <li>option - pasirinkimo laukelis</li>
+          <li>output - formos atsakymo atvaizdavimui laukas</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Atributai</h3>
+        <ul>
+          <li>type - nurodo inputo tipą
+            <ul>
+              <li>text - tekstinė įvestis</li>
+              <li>password - slapyvardis (taškėliai)</li>
+              <li>number - skaičius</li>
+              <li>email</li>
+              <li>url - nuoroda(turi prasidėti http</li>
+              <li>checkbox - daugelio pasirinkimas iš daugelio</li>
+              <li>radio - vieno pasirinkimas iš daugelio</li>
+              <li>file - failo pasirinkimas kompiuteryje</li>
+              <li>tel - telefonas</li>
+              <li>submit - formos pateikimas</li>
+              <li>range - skaičiaus pasirinkimas slenkančioje vietoje</li>
+              <li>date - datos pasirinkimas (be laiko)</li>
+              <li>datetime-local - lokalaus laiko pasirinkimas su data</li>
+              <li>month - mėnuo</li>
+              <li>week - savaitė</li>
+              <li>time - laiko pasirinkimas</li>
+              <li>color - spalvos pasirinkimas</li>
+              <li>button - mygtukas be funkcionalumo</li>
+              <li>image - formos pateikimas kaip paveiklsiukas</li>
+              <li>hidden - paslėpta įvestis</li>
+              <li>reset - atnaujinti formą (išvalyti)</li>
+              <li>search - paišką kažkur</li>
+            </ul>
+          </li>
+          <li>for - nurodo kuriam elementui priskirtas pagal id</li>
+          <li>id - elemento identifikatorius</li>
+          <li>name - nurodo inputo pavadinimą ( dažniausiai toks kaip id)</li>
+          <li>value - įvesties reikšmė</li>
+          <li>required - nurodo ar privalomas laukas jei yra</li>
+          <li>placeholder - reikšmė esanti prieš užpildant</li>
+          <li>min - mažiausias skaičius</li>
+          <li>max - didžiausias skaičius</li>
+          <li>step - kokiu žingsniu skaičius keičiasi</li>
+          <li>accept - kokio tipo failas priimtinas</li>
+          <li>pattern - kokia įvesties galima seka</li>
+          <li>checked - radio ar checkbox išsankstinis parinkimas</li>
+          <li>rows - text area eilučių kiekis</li>
+          <li>cols - text area stulpelių kiekis</li>
+          <li>selected - select ar datalist pasirinkimas išsankstinis</li>
+          <li>dissabled - išjungtas įvesties laukas (blured)</li>
+          <li>readonly - galima tik matyti kas įvesta</li>
+          <li>multiple - su ctrl galima kelias reikšmes pasirinkti (dažniau checkbox naudoti)</li>
+        </ul>
+
+      </div>
+      <div>
+        <h3>Pavyzdys</h3>
+        <form>
+          <div>
+            <label for="vardas">Vardas</label>
+            <input required placeholder="Įveskite savo vardą" type="text" name="vardas" id="vardas">
+          </div>
+          <div>
+            <label for="amzius">Amžius</label>
+            <input required type="number" name="Amžius" id="amzius" min="18" max="120" step="0.1">
+          </div>
+          <div>
+            <label for="randomZodis">Aprašymas</label>
+            <textarea name="randomZodis" id="randomZodis" rows="5" cols="15"></textarea><!-- nerašom į tag vidų -->
+          </div>
+          <div>
+            <label for="tavoId">Tavo ID</label>
+            <input type="text" name="id" id="id" value="125484945" readonly>
+          </div>
+          <div>
+            <!-- <label for="vienodi">Pasirinkimas programavimo kalbos</label> -->
+            <select name="vienodi" id="vienodi">Vienodi
+              <option value="neReiksme" disabled>Pasirinkimas programavimo kalbos</option>
+              <option value="a">JavaScript</option>
+              <option value="b" selected>TypesScript</option>
+              <option value="c">C++</option>
+              <option value="d">C#</option>
+              <option value="e">Java</option>
+              <option value="f">C</option>
+              <option value="g">PHP</option>
+              <option value="h">Python</option>
+            </select>
+          </div>
+          <div>
+            <label for="isKokioMiesto">Iš kokio Lietuvos miesto esi</label>
+            <input value="Vilnius" list="random" name="isKokioMiesto" id="isKokioMiesto">
+            <datalist id="random">
+              <option value="Kaunas">Atvaizduoja mažesniu šriftu</option>
+              <option value="Vilnius"></option>
+              <option value="Klaipėda"></option>
+              <option value="Šiauliai"></option>
+              <option value="Telšiai"></option>
+              <option value="Panevėžys"></option>
+              <option value="Druskininkai"></option>
+              <option value="Alytus"></option>
+              <option value="Utena"></option>
+              <option value="Palanga"></option>
+              <option value="Mažeikiai"></option>
+              <option value="Marijampolė"></option>
+              <option value="Tauragė"></option>
+              <option value="Rokiškis"></option>
+              <option value="Kėdainiai"></option>
+              <option value="Plungė"></option>
+              <option value="Ukmergė"></option>
+            </datalist>
+          </div>
+          <div>
+            <label for="">Pasirinkite lytį:</label>
+            <input type="radio" name="lytis" value="vyras" id="vyrasLyt">
+            <label for="vyrasLyt">Vyras</label>
+            <input type="radio" name="lytis" value="moteris" id="vyrasMot">
+            <label for="vyrasMot">Moteris</label>
+            <input type="radio" name="lytis" value="nenurodyti" checked id="vyrasNesakysiu">
+            <label for="vyrasNesakysiu">Nenoriu sakyti</label>
+          </div>
+          <div>
+            <label>Pasirinkite papildomus kebabo ingredientus:</label>
+            <input type="checkbox" id="Jelapenas" name="Jelapenas" value="Jelapenas">
+            <label for="Jelapenas">Jelapenas</label>
+            <input type="checkbox" id="Suris" name="Suris" value="Suris">
+            <label for="Suris">Sūris</label>
+            <input type="checkbox" id="Agurkeliai" name="Agurkeliai" value="Agurkeliai">
+            <label for="Agurkeliai">Agurkeliai</label>
+          </div>
+          <div>
+            <label for="email">Paštas</label>
+            <input type="email" id="email" name="Paštas">
+          </div>
+          <div>
+            <!-- pateikti formą jei nori -->
+            <input type="submit" value="Pateikti">
+            <!-- nenaudoti ;) <button onclick="()=>{console.log("Hello")}">Eiti į kitą formos puslapį</button> -->
+            <input type="button" onclick="myfunc()" value="Eiti į kitą formos puslapį">
+            <!-- neperkrauna puslapio šitas -->
+          </div>
+
+          <!-- <datalist id="ice-cream-flavors">
+      <option value="Chocolate"></option>
+      <option value="Coconut"></option>
+      <option value="Mint"></option>
+      <option value="Strawberry"></option>
+      <option value="Vanilla"></option>
+    </datalist> -->
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <!-- pseudo klasės -->
+      <h2>Pseudo klasės</h2>
+      <p>pvz css'e</p>
+      <ul>
+        <li>:checked - pažymetas checkbox arba radio</li>
+        <li>:default - pradinis su checked atributu</li>
+        <li>:disabled - su tokiu atributu</li>
+        <li>:enabled - su tokiu atributu</li>
+        <li>:focus - ant kurio sufokusuota</li>
+        <li>:in-range - įvestis ribose</li>
+        <li>:out-of-range - įvestis už ribų</li>
+        <li>:indeterminate - nenurodyta reikšmė (sunku padaryt, padaroma per scriptus)</li>
+        <li>:valid - validi reikšmė (pvz email)</li>
+        <li>:invalid - nevalidi reikšmė</li>
+        <li>:optional - įvestis neturinti required</li>
+        <li>:required - įvestis us required </li>
+        <li>:readonly - su readonly attributu</li>
+        <li>:read-write - be readonly attributu</li>
+      </ul>
+    </section>
+
+    <section>
+      <!-- pseudo elementai -->
+      <h2>Pseudo elementai</h2>
+      <ul>
+        <li>::placeholder - placeholderio parinkimas</li>
+        <li>::before - turinio parinkimas prieš</li>
+        <li>::after - turinio parinkimas po</li>
+        <li>::marker - markeriu parinkimas</li>
+        <li>::selection - kas pažymėta pasirinkimas</li>
+        <li>::first-letter - pirma raidė</li>
+        <li>::first-line - pirma eilutė</li>
+        <li>::-webkit-scrollbar - scrolbaras (reikia visus modifikuoti kad pasikeistų)</li>
+        <li>::-webkit-scrollbar-thumb</li>
+        <li>::-webkit-scrollbar-track</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+  </footer>
+</body>
+
+</html>

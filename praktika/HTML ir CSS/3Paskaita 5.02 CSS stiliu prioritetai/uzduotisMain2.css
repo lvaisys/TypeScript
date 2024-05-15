@@ -1,0 +1,48 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+div{
+  background-color: #e3e3e9;
+}
+
+div img {
+  width: 150px;
+  margin: auto;
+  display: block;
+}
+nav {
+  width: fit-content;
+  margin: auto;
+  padding: 8px;
+  display: block;
+}
+*{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+nav a {
+  margin: 70px;
+  font-size: x-large;
+  color: #ffe4c4;
+}
+header {
+  background-color: #914317;
+}
+main {
+  padding: 15px;
+  background-color: #ceda66;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+h2 {
+  background-color: #914317;
+  font-size: x-large;
+  color: #ffe4c4;
+  margin: 0px;
+}
+footer{
+  background-color: #7fffd4;
+}

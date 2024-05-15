@@ -1,0 +1,70 @@
+input:checked + label {
+  background-color: aquamarine;
+}
+input[type ='checkbox'], input[type='radio']{
+  display: none;
+}
+input:checked{
+  font-size: 0px;
+}
+:default {
+  background-color: brown;
+}
+:disabled{
+  color: black;
+}
+:enabled{color: purple;}
+:focus {background-color: burlywood;
+font-size: 2em;}
+
+:in-range{
+  color: green;
+}
+:out-of-range{background-color: red;}
+
+input[type='email']:valid {
+  color: green;
+}
+input[type='email']:invalid {
+  color: red;
+}
+::placeholder{
+  color: rgba(52, 143, 218, 0.562);
+  letter-spacing:5px;
+}
+li::before{
+  content: ":) ";
+  font-size: 30px;
+  font-weight: bold;
+}
+li::after{
+  content: " <3 ";
+  font-size: 30px;
+  font-weight: bold;
+}
+:nth-child(2n)::marker{
+color: orangered;
+}
+
+::selection {
+  background-color: rgb(0, 255, 170);
+  color: rgb(255, 0, 200);
+}
+
+::first-letter{
+  font-size: 50px;
+  color: red;
+}
+::first-line{
+  font-size: 20px;
+}
+::-webkit-scrollbar{
+  background-color: brown;
+}
+::-webkit-scrollbar-thumb{
+background-color: aquamarine;
+}
+::-webkit-scrollbar-track
+{
+background-color: chocolate;
+}

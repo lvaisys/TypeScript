@@ -1,0 +1,39 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+thead {
+  position: sticky;
+  top: 0px
+}
+
+table {
+  border-collapse: collapse;
+}
+thead{
+  box-sizing: content-box;
+  background-color: blanchedalmond;
+}
+td, th {
+  border: 1px solid blue;
+}
+[colspan="4"] {
+  background-color: aquamarine;
+}
+:link {
+  color: orange;
+}
+:visited{
+  color: brown;
+}
+a:hover{ 
+  color: chartreuse;
+}
+a:active{
+  color: aqua;
+}
+:empty{
+  height: 2px;
+  background-color: yellow;
+}
+.bi {
+  font-size: 30px;
+  color: blue;
+}

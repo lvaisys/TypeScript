@@ -1,0 +1,139 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 500vh;
+}
+
+.divContainer {
+  border: 1px solid black;
+  display: flex;
+  margin: 5px;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap-reverse; */
+  justify-content: center;
+  align-content: center;
+  /* align-items: center; */
+  flex-flow: row wrap;
+  height: 500px;
+  gap: 10px;
+}
+
+.divContainer>div {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  border: 3px solid black;
+  font-size: 30px;
+  font-weight: bold;
+  flex-grow: 1;
+
+}
+
+.order_1 {
+  order: 1;
+}
+
+.order_2 {
+  order: 2;
+}
+
+.orderNeg11 {
+  order: -1;
+}
+
+/* .divContainer > div.fGrow2{
+  flex-grow: 2; 
+}*/
+
+.align-self {
+  align-self: flex-end;
+}
+
+.divContainer>div:hover {
+  align-self: flex-start;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background-color: bisque;
+  align-items: center;
+  padding: 0 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  >div {
+    height: 80%;
+
+    >a {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      text-decoration: none;
+      gap: 10px;
+
+
+      >img {
+        height: 100%;
+      }
+
+      >span {
+        font-size: 30px;
+        color: black;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+      }
+    }
+  }
+
+  >nav {
+
+    >ul {
+      display: flex;
+      align-items: flex-end;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      gap: 10px;
+
+      >li {
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+        }
+
+        a:hover {
+          color: green;
+        }
+
+      }
+    }
+
+  }
+}
+
+h2 {
+  position: sticky;
+  top: 82px;
+  background-color: beige;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+section.textarround {
+  >img {
+    float: left;
+  }
+}

@@ -1,0 +1,53 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+#hero {
+  background-image: url("./Nova\ Scotia\ Duck\ Tolling\ Retriever.jpg");
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(219, 217, 122, 0.233);
+  }
+
+  >div {
+    position: relative;
+    width: 50vw;
+  }
+}
+
+main>section {
+  padding: 30px 10vw;
+}
+
+header,
+footer {
+  padding: 0 10vw;
+}
+
+#whatWeDo {
+  background-color: rgb(19, 86, 145);
+
+  >.cardList {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    >div {
+      box-shadow: 0 0 10px 3px rgba(255, 217, 0, 0.541);
+      width: 100%;
+      padding: 5px;
+      text-align: center;
+    }
+  }
+}

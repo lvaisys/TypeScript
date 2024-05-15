@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <H1>Grid</H1>
+    <section id="gridTeorija">
+      <!-- Grid teorija -->
+      <div>
+        <h3>Parent nustatymai (Container)</h3>
+        <ul>
+          <li>display: grid</li>
+          <li>grid-template-rows: [% | px | fr]</li>
+          <li>grid-template-columns: [% | px | fr]</li>
+          <li>grid-template-areas: ........</li>
+          <li>grid-template: [rows] / [columns]</li>
+          <li>gap: row-gap column-gap (atima vietą iš frakcijų)</li>
+          <li>justify-items: start | end | center | stretch (default) - į šonus</li>
+          <li>align-items: start | end | center | stretch (default) | baseline- į viršų ir apačią</li>
+          <li>place-items: align-items justify-items - į viršų ir apačią</li>
+          <li>justify-content: start | end | center | stretch (default) space-arround | space-between | space-evenly - į šonus</li>
+          <li>align-content: start | end | center | stretch (default) | space-arround | space-between | space-evenly - į viršų ir apačią</li>
+          <li>place-content: align-content justify-content </li>
+          <li>grid-auto-columns: [ px | fr | % ] - kaip kurti papildomų elementų stulpelius</li>
+          <li>grid-auto-rows: [ px | fr | % ] - kaip kurti papildomų elementų eilutes</li>
+          <li>grid-auto-flow: row (default) | column | row-dense | column-dense</li>
+          <li>grid: grid-template-rows / grid-template-columns / grid-template-areas / grid-auto-rows / grid-auto-columns / gris-auto-flow (viskas - labai komplikuota)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Children nustatymai (Items)</h3>
+        <ul>
+          <li>grid-row-start: number</li>
+          <li>grid-column-start: number</li>
+          <li>grid-row-end: number</li>
+          <li>grid-column-end; number</li>
+          <li>grid-row: start / end</li>
+          <li>grid-column: start / end</li>
+          <li>grid-area: name | grid-row-start /grid-column-start / grid-row-end / grid-column-end</li>
+          <li>z-index: number</li>
+          <li>align-self: start | end | center| stretch</li>
+          <li>justify-self: start | end | center| stretch </li>
+          <li>place-self: align-self justify-self</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Units & Functions</h3>
+        <ul>
+          <li>fr - frakcija </li>
+          <li>min-content</li>
+          <li>max-content</li>
+          <li>auto</li>
+          <li>fit-content</li>
+          <li>minmax(minSize maxSize)</li>
+          <li>repeat(n, size-fragment) - repeat(3, 1fr 2fr) = 1fr 2fr 1fr 2fr 1fr 2fr</li>
+          <li>masonry</li>
+          <li>subgrid - toks pats grid gride</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <!-- GridPvz -->
+      <h2>Grid pavyzdys</h2>
+      <div class="gridPvzContainer">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+    </section>
+    <section>
+      <h2>Kortelės</h2>
+      <div class="card1">
+        <h3>Knygos pavadinimas</h3>
+        <img src="../3Paskaita 5.02 CSS stiliu prioritetai/media/images.jpg" alt="">
+        <p>Aprašymas: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus impedit maxime voluptatem recusandae? Eligendi doloribus ratione blanditiis delectus. Reiciendis, unde sint consequatur a optio similique facere ratione in nisi totam repellendus commodi vero quia consequuntur, nihil voluptate voluptatem placeat. Cupiditate ea dicta similique deleniti odit ullam exercitationem, aliquid voluptates delectus vitae temporibus id in cum dolores esse minus, architecto dolorem cumque veritatis? Saepe quidem deserunt temporibus praesentium optio veniam ducimus! Quo maxime ullam delectus voluptates unde possimus sapiente reprehenderit officiis commodi maiores. Blanditiis assumenda reprehenderit cumque impedit incidunt! Quaerat ratione error dolores atque ipsam? Illo pariatur cupiditate repudiandae recusandae nesciunt.</p>
+        <span>Autorius</span>
+        <span>Leidimo metai</span>
+        <span>Žanrai</span>
+        <span>Reitingas</span>
+        <a href="">Daugiau informacijos</a>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+
+</body>
+
+</html>
